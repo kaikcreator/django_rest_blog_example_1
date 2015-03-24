@@ -22,8 +22,8 @@ comment_creation = views.PostViewSet.as_view({
 
 urlpatterns = patterns('api.views', 
    url(r'^v1/posts/$', post_list, name='post_list'), 
-   url(r'^v1/posts/(?P<pk>[0-9]+)/$', post_detail, name='post_detail'), 
-   url(r'^v1/posts/(?P<pk>[0-9]+)/comment/$', comment_creation, name='comment_creation'),
+   url(r'^v1/post/(?P<pk>[0-9]+)/$', post_detail, name='post_detail'), 
+   url(r'^v1/post/(?P<pk>[0-9]+)/comment/$', comment_creation, name='comment_creation'),
 )
 
 
